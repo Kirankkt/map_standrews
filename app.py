@@ -154,7 +154,7 @@ type_colors = {
     "property": [220, 38, 38],
     "unknown": [120, 120, 120]
 }
-f["_color"] = f["property_type"].map(type_colors).fillna([120,120,120])
+f["_color"] = f["property_type"].apply(lambda t: type_colors.get(str(t), [120,120,120]))
 
 def normalize_size(s):
     arr = pd.to_numeric(s, errors="coerce")
