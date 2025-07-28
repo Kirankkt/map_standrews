@@ -153,7 +153,7 @@ for idx, row in f.dropna(subset=["latitude","longitude"]).reset_index(drop=True)
     <b>Sea dist:</b> {row.get('distance_to_nearest_beach_km')} km<br>
     <b>Beach:</b> {row.get('nearest_beach_name','')}<br>
     <a href="{row.get('source_url','')}" target="_blank">Open listing</a>
-    
+    """
     cm = folium.CircleMarker(
         location=[row["latitude"], row["longitude"]],
         radius=float(radii[idx]) if not pd.isna(radii[idx]) else 8,
