@@ -39,7 +39,7 @@ def fmt_inr(v):
     return f"₹{v:,.0f}"
 
 # Fallbacks (so your boss doesn't need to upload)
-DEFAULT_LOCAL = "data/combined_full_listings_clean_v9.csv"   # put the CSV in a /data folder in your repo
+DEFAULT_LOCAL = "combined_full_listings_clean_v9.csv"   # put the CSV in a /data folder in your repo
 DEFAULT_URL   = os.environ.get("DATA_CSV_URL", "").strip()   # or set this env var to a raw GitHub CSV
 
 # ---------------- Source selection ----------------
