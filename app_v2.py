@@ -44,8 +44,8 @@ def fmt_inr(v):
 
 # Where to look for the CSV (in this order)
 CANDIDATES = [
-    "data/combined_full_listings_clean_v9.csv",   # repo data/ folder
-    "combined_full_listings_clean_v9.csv",        # repo root
+    "data/NO_Url_export.csv",   # repo data/ folder
+    "NO_Url_export.csv",        # repo root
 ]
 DEFAULT_URL = os.environ.get("DATA_CSV_URL", "").strip()  # optional raw GitHub CSV
 
